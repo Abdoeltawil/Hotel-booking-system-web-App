@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            
+            </style>
+        <title> Btts M7mra log In Page </title>
+		<script type="text/javascript">
+function validateForm() {
+var valid = true;
+if(document.inputForm.name.value==""){
+alert("Name is required");
+document.inputForm.name.focus();
+valid=false; }
+
+if(document.inputForm.username.value==""){
+alert("User name is required");
+document.inputForm.username.focus();
+valid=false; }
+if(document.inputForm.email.value==""){
+alert("Email is required");
+document.inputForm.email.focus();
+valid=false; }
+else{
+if(document.inputForm.email.value.indexOf(".")==-1){
+alert("Please Enter valid email, e.g:info@yahoo.com");}
+document.inputForm.email.focus();
+valid=false; }
+if(document.inputForm.password.value==""){
+alert("Password is required");
+document.inputForm.password.focus();
+valid=false; }
+else{
+if (document.inputForm.password.value.length<5||document.inputForm.password.value.length>8){
+alert("invalid password");
+document.inputForm.password.focus();
+valid=false; }
+}
+if(document.inputForm.password.value != document.inputForm.confirm.value){
+alert("The two passwords do not match");
+document.inputForm.email.focus();
+valid=false; }
+
+return valid;
+}
+</script>
+        <link rel="stylesheet" type="text/css" href="logup.css" >
+        <body>
+            <div class="loginbox" >
+                <img src="de298921167dc40210659f6aadf48ce8_w750_h750.jpg" class="icon" >
+                <h1>Btts M7mraa</h1>
+                <Form name="inputForm"
+onSubmit="return validateForm()">
+                    <pr>Name </pr> <br>
+                    <input type="text" name="name" placeholder="Enter Your Name" > <br>
+                    <pr>User Name </pr> <br>
+                    <input type="text" name="username" placeholder="Enter User Name" > <br>
+					<pr>Email </pr> <br>
+					<input type="email" name="email" placeholder="Enter email" > <br>
+                    <Pr>Password</Pr> <br>
+                    <input type="password" name="password" placeholder="Enter Password" > <br>
+                    <Pr>confirm password</Pr> <br>
+                    <input type="password" name="confirm" placeholder="Enter Password" > <br>
+                    <input type="submit" name="" value="OK"><br>
+                </form>
+            </div>
+        </body>
+    </head>
+</html> 

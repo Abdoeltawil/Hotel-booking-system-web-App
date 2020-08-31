@@ -1,0 +1,90 @@
+body
+{
+    margin: 0% ;
+    padding: 0% ;
+    background: url(Pic/bata.jpg) ;
+    background-size: cover ;
+    background-position: center ;
+    font-family: sans-serif ;
+}
+.loginbox
+{
+    width: 320px;
+    height: 420px;
+    background: #000 ;
+    color: #fff ;
+    top: 50% ;
+    left: 50% ;
+    position: absolute ;
+    transform: translate(-50%,-50%) ;
+    box-sizing: border-box ;
+    padding: 70px 30px ;
+}
+.icon
+{
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+    position: absolute ;
+    top: -13%;
+    margin-left: 25% ;
+}
+h1
+{
+    margin: 0 ;
+    color: rgb(212, 182, 11) ;
+    padding: 0 0 20px ;
+    text-align: center ;
+    font-size: 22 ;
+    font-style: italic ;
+}
+.loginbox p
+{
+    margin: 0 ;
+    padding: 0 ;
+    font-weight: bold ;
+}
+.loginbox input 
+{
+    width: 200 ;
+    margin-bottom: 20px ;
+}
+.loginbox input[type="text"] , input[type="password"]
+{
+    border: none ;
+    border-bottom: 1px solid #fff ;
+    background: transparent ;
+    outline: none ;
+    height: 40px;
+    color: #fff ;
+    font-size: 16px ;
+}
+.loginbox input[type="button"]
+{
+    width: 250px ;
+    border: none ;
+    outline: none ;
+    height: 40px;
+    background: rgb(212, 182, 11) ; ;
+    color: #fff ;
+    font-size: 18px ;
+    border-radius: 20px ;
+   
+}
+.loginbox input[type="button"]:hover
+{
+    cursor: pointer ;
+    background: #f36404 ;
+    color: #000 ;
+}
+.loginbox a
+{
+    text-decoration: none ;
+    font-size: 12px ;
+    line-height: 20px ;
+    color: darkgrey ;
+}
+.loginbox a:hover
+{
+    color:rgb(223, 245, 26) ;
+}

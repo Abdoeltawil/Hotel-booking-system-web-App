@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+        <style>
+            
+            </style>
+			
+        <title> Btts M7mra log In Page </title>
+		<script type="text/javascript">
+function validateForm() {
+var valid = true;
+if(document.inputForm.name.value==""){
+alert("Name is empty");
+document.inputForm.name.focus();
+valid=false; }
+if(document.inputForm.password.value==""){
+alert("password is empty");
+document.inputForm.name.focus();
+valid=false; 
+}
+else{
+if (document.inputForm.password.value.length<5||document.inputForm.password.value.length>8){
+alert("invalid password");
+document.inputForm.password.focus();
+valid=false; }
+}
+return valid;
+}
+</script>
+        <link rel="stylesheet" type="text/css" href="DD.css" >
+        <body>
+		
+            <div class="loginbox" >
+                <img src="Pic/de298921167dc40210659f6aadf48ce8_w750_h750.jpg" class="icon" >
+                <h1>Btts M7mraa</h1>
+                <Form name="inputForm"
+onSubmit="return validateForm()">
+                    <pr>User Name </pr> <br>
+                    <input type="text" name="name"  placeholder="Enter User Name" > <br>
+                    <Pr>Password</Pr> <br>
+                    <input type="password" name="password" placeholder="Enter Password" > <br>
+                    <input type="submit" name="" value="Log In"><br>
+                    <a href="#" >forgot Your Password ?</a> <br>
+                    <a href="regisraition.html" >Don't have an Account ?</a> <br>
+                </form>
+            </div>
+        </body>
+    </head>
+</html> 

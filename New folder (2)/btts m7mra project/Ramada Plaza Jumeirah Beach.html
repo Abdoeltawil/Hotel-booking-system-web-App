@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ramada Plaza Jumeirah Beach</title>
+    <link rel="stylesheet" href="ramada.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="slidershow">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1">
+          <img src="Pic/ramada1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/ramada2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/ramada3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/ramada4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+
+      </div>
+      </div>
+    </div>
+
+    <header>
+  <h2>Ramada Plaza Jumeirah Beach</h2>
+</header>
+
+  <section>
+
+    <button class="collapsible"><h2>Info<h2></button>
+    <div class="content">
+      <p>      Hotel Ramada Plaza Jumeirah Beachname is a 360-room deluxe hotel located close to The Walk at Jumeirah Beach and
+            offering views of the Dubai Marina and Palm Jumeirah. Accommodation choices include studios, suites, and apartments,
+             each available for short or extended stays. The apartments have two, three, or four bedrooms.
+           </p>
+    </div>
+    <button class="collapsible"><h2>Price</h2></button>
+    <div class="content">
+      <p>15,000 EGP</p>
+    </div>
+
+    <button class="collapsible"><h2>Location</h2></button>
+    <div class="content">
+      <nav>
+<a href="https://goo.gl/maps/cbCMFqCouGJJFFFt6">to get the location of the hotel click here</a>
+</nav>
+    </div>
+
+    <button class="collapsible"><h2>Booking</h2></button>
+    <div class="content">
+
+      <a href="checkin.html" class="button">booking this hotel</a>
+        </div>
+
+  </section>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+  </body>
+
+</html>

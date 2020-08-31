@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hilton Hurghada Resort</title>
+    <link rel="stylesheet" href="ramada.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="slidershow">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1">
+          <img src="Pic/h1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/h2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/h3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/h4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+
+      </div>
+      </div>
+    </div>
+
+    <header>
+  <h2>Hilton Hurghada Resort</h2>
+</header>
+
+  <section>
+
+    <button class="collapsible"><h2>Info<h2></button>
+    <div class="content">
+      <p>      Featuring exclusive access to the Red Sea, Hotel Hilton Hurghada Resortname boasts three pools, a watersports
+        centre, and a dive school where guests can learn how to scuba dive. All rooms at this hotel enjoy complimentary Wi-Fi,
+         and flat-screen TVs with satellite channels are standard. Work desks are provided in all accommodation, as are
+          tea/coffee making facilities. Guests looking to exercise can make use of the modern fitness centres, or swim in the
+           lap pool. Facilities also include a paddle tennis table, playground, and squash and tennis courts.
+           </p>
+    </div>
+    <button class="collapsible"><h2>Price</h2></button>
+    <div class="content">
+      <p>11,000 EGP</p>
+    </div>
+
+    <button class="collapsible"><h2>Location</h2></button>
+    <div class="content">
+    <nav>
+<a href="https://g.page/HiltonHurghadaResort?share">to get the location of the hotel click here</a>
+</nav>
+    </div>
+
+    <button class="collapsible"><h2>Booking</h2></button>
+    <div class="content">
+
+      <a href="checkin.html" class="button">booking this hotel</a>
+        </div>
+
+  </section>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+  </body>
+
+</html>

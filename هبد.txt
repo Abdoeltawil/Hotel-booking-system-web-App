@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Check in form</title>
+        <link rel="stylesheet" type="text/css" href="checkin.css" >
+    </head>
+    <body>
+        <div class="checkin">
+            <label>Hotel</label>
+            <input type="text" class="hotel" placeholder="Hotel Name" >
+        </div>
+        
+        <div class="datein">
+            <label> From </label>
+            <input type="date" class="From" >
+        </div>
+        <div class="dateto" >
+            <label> To </label>
+            <input type="date" class="To" >
+        </div>
+        <div class="Person" >
+                <label> Person number </label>
+                <input type="number" class="person" value="1" >
+            </div>
+        <div class="Rooms" >
+                <label> Room number </label>
+                <input type="number" class="room" value="1" >
+            </div>
+            <div class="input" >
+                    <input type="button" value="Submit" >
+                </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+body
+{
+    margin: 0% ;
+    padding: 0% ;
+    background: url(Pic/Untitled-1.png) ;
+    background-size: cover ;
+    background-position: center ;
+    font-family: sans-serif ;
+}
+.icon-bar {
+    width: 100%; 
+    background-color: rgb(212, 182, 11); 
+    overflow: auto; 
+    top: 50% ;
+  }
+  
+  .icon-bar a {
+    float: left;
+    text-align: center; 
+    width: 20%; 
+    padding: 12px 0; 
+    transition: all 0.3s ease; 
+    color: #f7f3f3; 
+    font-size: 36px; 
+    height: 5% ;
+    text-shadow: 2px 2px #000 ;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; 
+  }
+  
+  .active {
+    background-color: #f36404; 
+  }
+ 

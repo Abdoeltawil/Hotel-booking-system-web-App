@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Four Seasons Hotel</title>
+    <link rel="stylesheet" href="ramada.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="slidershow">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1">
+          <img src="Pic/f1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/f2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/f4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pic/f3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+
+      </div>
+      </div>
+    </div>
+
+    <header>
+  <h2>Four Seasons Hotel</h2>
+</header>
+
+  <section>
+
+    <button class="collapsible"><h2>Info<h2></button>
+    <div class="content" >
+      <p>     Four Seasons Hotel Alexandria at San Stefanoname is a luxury, waterfront hotel in Alexandria.
+         The property features stunning sea and city views and amenities include an outdoor infinity pool, indoor pool,
+          and private beach area. All rooms are air-conditioned and feature marble en suite bathrooms and balconies overlooking
+          either the city or the Mediterranean Sea. Other amenities include Wi-Fi, safes, satellite television, and tea and
+           coffee facilities. The spa has a hot tub and sauna and offers massages, facials and other treatments. A kid's club,
+            fitness centre, squash court and meeting facilities all feature. Lebanese and Syrian dishes are featured at Byblos
+             Restaurant while a la carte and buffet options are available for breakfast at Kala Restaurant.
+           </p>
+    </div>
+    <button class="collapsible"><h2>Price</h2></button>
+    <div class="content">
+      <p>20,000 EGP</p>
+    </div>
+
+    <button class="collapsible"><h2>Location</h2></button>
+    <div class="content">
+      <nav>
+<a href="https://goo.gl/maps/xCUQSyPGBumXJzMD9">to get the location of the hotel click here</a>
+</nav>
+    </div>
+
+    <button class="collapsible"><h2>Booking</h2></button>
+    <div class="content">
+
+      <a href="checkin.html" class="button">booking this hotel</a>
+        </div>
+
+  </section>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+  </body>
+
+</html>

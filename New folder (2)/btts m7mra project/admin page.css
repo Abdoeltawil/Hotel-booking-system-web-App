@@ -1,0 +1,62 @@
+body
+{
+    background-color:rgb(94, 100, 182);
+}
+h1
+{
+color: rgb(156, 33, 33);
+font-size: 46px;
+font-style: oblique;
+}
+p
+{
+    color:rgb(192, 20, 135);
+    font-size: 28px;
+    font-style: italic;
+}
+.badmin
+{
+    font-size:30px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(116, 7, 88);
+}
+div
+{
+    
+    background-color:#f8f7f6 ;
+    border-radius: 10px;
+}
+input[type="button"]
+{
+    width: 150px ;
+    border: none ;
+    outline: none ;
+    height: 25px;
+    background: rgb(54, 62, 134) ; ;
+    color: rgb(248, 248, 250) ;
+    font-size: 13px ;
+    font-style: italic;
+    border-radius: 20px ;
+   
+}
+input[type="text"]
+{
+    border: none ;
+    border-bottom: 1px solid rgb(211, 158, 12) ;
+    background: transparent ;
+    outline: none ;
+    height: 30px;
+    color: rgb(158, 24, 24) ;
+    font-size: 12px ;
+
+}
+input[type="button"]:hover
+{
+    cursor: pointer ;
+    background: #e936a4 ;
+    color: #000 ;
+}
+
+
+
